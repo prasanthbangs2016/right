@@ -2,7 +2,7 @@ import React from "react";
 import Dashboard from "../Pages/Dashboard/Dashboard";
 import MicroCategoryList from "../Pages/Categories/MicroCategories/microcategories";
 import SubCategories from "../Pages/Categories/SubCategories/subcategories";
-import Categories from "../Pages/Categories/Categories /categories";
+// import Categories from "../Pages/Categories/Categories/categories";
 import MasterCategories from "../Pages/Categories/MasterCategories/mastercategories";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ManageTaskers from "../Pages/RATaskers/manageTakers";
