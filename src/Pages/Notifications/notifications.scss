@@ -1,0 +1,17 @@
+.notifications {
+  .formBoxs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .inputBox {
+    width: 80%;
+  }
+  .filetype {
+    float: right;
+    margin: 5px;
+  }
+  .fileName {
+    font-size: 15px;
+  }
+}

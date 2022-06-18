@@ -1,0 +1,31 @@
+.Permissions {
+  .roleSelect {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-bottom: 15px;
+    select {
+      padding: 5px;
+    }
+  }
+  .collapser {
+    padding: 5px;
+    border: 1px solid grey;
+  }
+  .collapse_items {
+    .item {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    .subdata {
+      margin-left: 50px;
+      margin-top: 10px;
+      .crud {
+        width: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+  }
+}

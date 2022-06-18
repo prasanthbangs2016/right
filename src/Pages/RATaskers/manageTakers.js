@@ -1,0 +1,127 @@
+import { useEffect } from "react";
+import List from "../../Components/TableTemplate/List";
+const create = {
+  name: "RA Tasker",
+  //nameKey: "fullname",
+  fields: [
+    { name: "Full Name", type: "text" },
+    { name: "Email", type: "email" },
+    { name: "Phone Number", type: "PhoneNumber" },
+    {
+      name: "Master Category",
+      type: "selectbox",
+      option: ["HairCut,Grooming"],
+    },
+    {
+      name: "Subscription Type",
+      type: "selectbox",
+      option: [
+        { id: "RAPromote", value: "RA Promote" },
+        { id: "RAPremium", value: "RA Premium" },
+        { id: "RAPrice", value: "RA Price" },
+      ],
+    },
+    { name: "Desired Admin Hourly Rate", type: "text", disabled: "Edit" },
+    { name: "Avg Hourly Rate", type: "text", disabled: "Edit" },
+    { name: "Total Requests", type: "number", disabled: "Edit" },
+    { name: "Accepted Requests", type: "number", disabled: "Edit" },
+    { name: "Cancelled Requests", type: "number", disabled: "Edit" },
+    {
+      name: "Status",
+      type: "selectbox",
+      option: [
+        { id: "active", value: "Active" },
+        { id: "inactive", value: "InActive" },
+      ],
+    },
+  ],
+  apiData: [
+    { name: "fullname", type: "textbox" },
+    { name: "email", type: "textbox" },
+    { name: "phoneNumber", type: "PhoneNumber" },
+    {
+      name: "MasterCategory",
+      type: "selectbox",
+    },
+    {
+      name: "subscriptiontype",
+      type: "selectbox",
+    },
+    { name: "DesiredAdminHourlyRate", type: "numberbox" },
+    { name: "AvgHourlyRate", type: "numberbox" },
+    { name: "TotalRequests", type: "numberbox" },
+    { name: "AcceptedRequests", type: "numberbox" },
+    { name: "CancelledRequests", type: "numberbox" },
+    { name: "Status", type: "selectbox" },
+  ],
+  api: "AdminMicrocategories/CreateAdminMicroCategory",
+};
+const Data = {
+  Header: "Manage Taskers",
+  name: "Manage Taskers",
+  nameKey: "fullname",
+  add: false,
+  List: {
+    columns: [
+      { label: "S.No", field: "sno" },
+      { label: "Full Name", field: "fullname" },
+      { label: "Email", field: "email" },
+      { label: "Phone Numbers", field: "phoneNumbers" },
+      { label: "Master Category", field: "MasterCategory" },
+      { label: "Subscription type", field: "subscriptiontype" },
+      { label: "Desired Admin Hourly Rate", field: "DesiredAdminHourlyRate" },
+      { label: "Avg Hourly Rate", field: "AvgHourlyRate" },
+      { label: "Total Requests", field: "TotalRequests" },
+      { label: "Accepted Requests", field: "AcceptedRequests" },
+      { label: "Cancelled Requests", field: "CancelledRequests" },
+      { label: "Status", field: "Status" },
+      { label: "Action", field: "action" },
+    ],
+    rows: [
+      {
+        fullname: "Billy",
+        email: "Billy@pena4.com",
+        phoneNumber: "2394455572",
+        MasterCategory: "Hair cut",
+        subscriptiontype: "RA Promote",
+        DesiredAdminHourlyRate: "$22",
+        AvgHourlyRate: "$20.20",
+        TotalRequests: "11",
+        AcceptedRequests: "5",
+        CancelledRequests: "2",
+        Status: "Active",
+      },
+      {
+        fullname: "Max",
+        email: "MAx@pena4.com",
+        phoneNumber: "2394455572",
+        MasterCategory: "Hair cut",
+        subscriptiontype: "RA Promote",
+        DesiredAdminHourlyRate: "$22",
+        AvgHourlyRate: "$20.20",
+        TotalRequests: "11",
+        AcceptedRequests: "5",
+        CancelledRequests: "2",
+        Status: "Active",
+      },
+      {
+        fullname: "Payne",
+        email: "payne@pena4.com",
+        phoneNumber: "2394455572",
+        MasterCategory: "Hair cut",
+        subscriptiontype: "RA Promote",
+        DesiredAdminHourlyRate: "$22",
+        AvgHourlyRate: "$20.20",
+        TotalRequests: "11",
+        AcceptedRequests: "5",
+        CancelledRequests: "2",
+        Status: "Active",
+      },
+    ],
+  },
+  filters: [],
+  create: create,
+};
+export default function ManageTaskers() {
+  return <List data={Data} />;
+}

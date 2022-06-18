@@ -1,0 +1,14 @@
+.selectBox{
+    .sBox{
+            display: flex;
+            flex-direction: column;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        .sbox{
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid black;
+        max-width: 175px;
+        }
+    }
+}

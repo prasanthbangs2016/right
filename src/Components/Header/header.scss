@@ -1,0 +1,29 @@
+.Header {
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #272e40;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  .heading {
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+  }
+  .right_header {
+    width: 15%;
+    display: flex;
+    justify-content: space-evenly;
+    .Log {
+      display: inline-flex;
+      .logout {
+        margin-right: 10px;
+        border: none;
+        background: transparent;
+        padding: 0px;
+      }
+    }
+  }
+}

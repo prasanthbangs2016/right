@@ -1,0 +1,161 @@
+.Rescheduled {
+  .box {
+    width: 100px;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .DateBox {
+    .dates {
+      display: flex;
+    }
+  }
+  .times {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+}
+.Details {
+  font-size: 15px;
+  .bookings {
+    display: flex;
+    justify-content: space-between;
+  }
+  strong {
+    span {
+      color: skyblue;
+      font-weight: bolder;
+    }
+  }
+  .status {
+    display: flex;
+    align-items: flex-start;
+    .statusbox {
+      width: 20%;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+    }
+    .bar {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    .line {
+      position: absolute;
+      left: 28px;
+      width: 128px;
+      height: 5px;
+    }
+  }
+  .Boldblue {
+    font-weight: bold;
+    color: skyblue;
+  }
+  .tracking {
+    margin-top: 10px;
+    .header {
+      font-weight: bolder;
+      background-color: #80808036;
+      padding: 2px 10px;
+    }
+    border: 2px solid #80808036;
+    td {
+      padding: 5px 10px;
+    }
+  }
+  .personalDetails {
+    margin-top: 20px;
+    h6 {
+      font-weight: bold !important;
+    }
+    .person {
+      display: flex;
+    }
+    .service {
+      margin-top: 20px;
+    }
+    .detail {
+      margin-left: 10px;
+      display: flex;
+      margin-bottom: 5px;
+      .head {
+        flex: 1;
+        color: grey;
+      }
+      .body {
+        flex: 2;
+      }
+    }
+  }
+  .chat {
+    border: 1px solid #80808040;
+    border-radius: 10px;
+    .cust {
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+    }
+    .system {
+      h6 {
+        font-weight: bold;
+      }
+      background-color: #80808040;
+      color: black;
+      padding: 5px;
+      border-radius: 10px;
+      margin: 10px;
+      width: fit-content;
+    }
+    .customer {
+      width: fit-content;
+      margin: 5px;
+      background-color: green;
+      color: white;
+      padding: 10px;
+      border-radius: 10px;
+    }
+  }
+}
+.chatSystem {
+  height: 100vh;
+  .chatbox {
+    display: flex;
+  }
+  .user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .profile {
+      width: 70px;
+      object-fit: contain;
+      border-radius: 80px;
+    }
+  }
+  .system {
+    h6 {
+      font-weight: bold;
+    }
+    background-color: #80808040;
+    color: black;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 10px;
+    width: fit-content;
+  }
+  .customer {
+    width: fit-content;
+    margin: 5px;
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+  }
+}

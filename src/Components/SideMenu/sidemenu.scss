@@ -1,0 +1,81 @@
+$margin: 15px 0px 20px 0px;
+$color: white;
+.SideMenu {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #272e40;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  .logo {
+    width: 12vw;
+    object-fit: contain;
+    margin: $margin;
+  }
+  .profile {
+    color: $color;
+    font-size: 13px;
+    text-align: center;
+    .user_logo {
+      width: 60px;
+      object-fit: contain;
+      border-radius: 50px;
+      margin: $margin;
+    }
+  }
+  .menus {
+    padding: 10px;
+    color: $color;
+    font-size: 13px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    .MenuCard {
+      a {
+        color: white;
+      }
+    }
+    .MenuItems {
+      display: inline-flex;
+      padding: 4px;
+      margin-bottom: 5px;
+      width: 100%;
+      .item_name {
+        margin-left: 10px;
+      }
+      .menu_logo {
+        object-fit: contain;
+        width: 20px;
+      }
+    }
+    .active,
+    .MenuItems:hover {
+      background-color: white;
+      color: black;
+      border-radius: 5px;
+    }
+    .subMenuItems {
+      margin-top: 10px;
+      margin-left: 35px;
+      margin-block-start: auto;
+      div {
+        padding: 4px;
+        margin: 1px;
+        border-radius: 5px;
+        a {
+          color: white;
+          text-decoration: none;
+        }
+      }
+      .active,
+      div:hover {
+        color: black;
+        background-color: white;
+        a {
+          color: black;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

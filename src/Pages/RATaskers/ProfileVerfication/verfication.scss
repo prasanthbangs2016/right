@@ -1,0 +1,66 @@
+.Verfication {
+  .tabs {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .tab {
+    padding: 5px;
+    border: 1px solid #80808045;
+    width: 24%;
+    text-align: center;
+    cursor: pointer;
+  }
+  .active {
+    background-color: #80808045;
+  }
+  .tabContent {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px;
+  }
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    input {
+      width: 20%;
+      border: none;
+      padding: 3px;
+      background-color: #272e40;
+      color: white;
+      border-radius: 5px;
+    }
+  }
+  .tabContent {
+    display: flex;
+    justify-content: space-around;
+  }
+  #Identity {
+    .idPhoto {
+      width: 25%;
+      height: 25%;
+      object-fit: contain;
+    }
+    .details {
+      display: flex;
+      .labels,
+      .values {
+        display: flex;
+        flex-direction: column;
+      }
+      .labels {
+        span {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  #Service {
+    .Info {
+      margin: 10px;
+    }
+    .location {
+      width: 85%;
+    }
+  }
+}

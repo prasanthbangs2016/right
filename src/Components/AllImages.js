@@ -1,0 +1,21 @@
+const AllImages = {
+  white_logo: require("../images/logo_white.png"),
+  user: require("../images/MannyPena.png"),
+  access: require("../images/icons/access.png"),
+  bookings: require("../images/icons/bookings.png"),
+  dashboard: require("../images/icons/dashboard.png"),
+  discount: require("../images/icons/discount.png"),
+  menu: require("../images/icons/menu.png"),
+  price: require("../images/icons/price.png"),
+  reports: require("../images/icons/reports.png"),
+  services: require("../images/icons/services.png"),
+  settings: require("../images/icons/settings.png"),
+  taskers: require("../images/icons/taskers.png"),
+  locationicon: require("../images/icons/location.png"),
+  sampleicon: require("../images/icons/3.png"),
+  location: require("../images/location.jpeg"),
+  certificate: require("../images/icons/certi.jpeg"),
+  credit: require("../images/icons/credit.png"),
+  reference: require("../images/icons/reference.png"),
+};
+export default AllImages;

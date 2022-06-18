@@ -1,0 +1,89 @@
+.Ratings {
+  padding: 15px;
+  margin: 15px;
+  border-radius: 10px;
+  max-width: 60%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  .question {
+    color: grey;
+    margin: 20px 0px;
+    text-align: center;
+    .Rating {
+      margin-top: 15px;
+    }
+  }
+  .customerHead {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    .info {
+      display: flex;
+      align-items: center;
+    }
+    img {
+      width: 100px;
+      object-fit: contain;
+      border-radius: 50px;
+      border: 2px solid grey;
+      margin-right: 15px;
+    }
+    .name {
+      font-weight: bold;
+    }
+    .profession {
+      color: grey;
+      font-size: 15px;
+      font-weight: bold;
+    }
+    .average_score {
+      margin-left: 15px;
+      .rating {
+        font-weight: bold;
+        font-size: 27px;
+        margin-right: 10px;
+      }
+      .starRating {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+  .body {
+    padding: 0px 30px;
+    .experienceRating {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 1px;
+      border-bottom: 1px solid grey;
+      .name {
+        flex: 12;
+      }
+      .rating {
+        flex: 1;
+        margin-right: 10px;
+        margin-top: 5px;
+      }
+      .sRating {
+        flex: 2;
+      }
+    }
+  }
+  .feedback {
+    .Question {
+      margin-top: 50px;
+      margin-bottom: 10px;
+    }
+    .textBox {
+      height: 100px;
+      width: 100%;
+      margin-bottom: 15px;
+    }
+    .button {
+      color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+      border: none;
+      background-color: black;
+    }
+  }
+}

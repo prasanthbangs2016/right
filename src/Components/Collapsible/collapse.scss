@@ -1,0 +1,35 @@
+.collapser {
+  cursor: pointer;
+  .collapse_items {
+    display: flex;
+    flex-direction: column;
+  }
+  .header {
+    padding: 5px 5px 5px 10px;
+    border-bottom: 1px solid #80808026;
+    background: #272e40;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 5px;
+  }
+  .item {
+    padding: 5px 10px;
+    border-bottom: 1px solid #80808026;
+    background: #272e40;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 5px;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    display: grid;
+    grid-template-columns: 80% 10% 10%;
+    align-items: center;
+    strong {
+      margin-right: 5px;
+    }
+    .actions {
+      display: grid;
+      grid-template-columns: 80% 20%;
+      margin-top: 10px;
+    }
+  }
+}

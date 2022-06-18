@@ -1,0 +1,20 @@
+.SelectedCategories {
+  .Head {
+    font-weight: bold;
+  }
+  .Row {
+    div {
+      border: 1px solid grey;
+      height: 70px;
+      padding: 7px;
+    }
+  }
+  .Table {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    div {
+      flex: 1;
+    }
+  }
+}

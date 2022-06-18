@@ -1,0 +1,85 @@
+ .ManageLocations {
+   display: flex;
+   flex-direction: column;
+
+   .configure {
+     h5 {
+       margin-bottom: 15px;
+     }
+
+     .Box {
+       display: flex;
+     }
+
+     .box {
+       display: flex;
+       flex-direction: column;
+       margin-right: 15px;
+
+       input {
+         padding: 5px;
+         border: 2px solid #8080807d;
+         border-radius: 5px;
+       }
+     }
+
+     .button {
+       padding: 4px 13px;
+       margin-top: 10px;
+       border: none;
+       background-color: green;
+       border-radius: 5px;
+       color: white;
+     }
+   }
+ }
+.serviceslist {
+  .searchWrapper {
+    border: 1px solid black;
+  }
+  .ServiceCollpasible {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    background-color: white;
+    margin: 10px;
+    cursor: pointer;
+    max-width: 60%;
+    .Collpasible {
+      padding: 8px;
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      input {
+        margin-right: 10px;
+      }
+    }
+    .back {
+      background-color: #8080804d;
+    }
+    .collapse_items {
+      .item {
+        padding: 10px;
+        display: grid;
+        grid-template-columns: auto auto;
+        background-color: #8080804d;
+        input {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  .filters {
+    display: flex;
+    .Box {
+      display: flex;
+      flex-direction: column;
+      margin: 20px;
+      .box {
+        border: 2px solid grey;
+        border-radius: 5px;
+        padding: 7px 5px;
+        width: 175px;
+      }
+    }
+  }
+}

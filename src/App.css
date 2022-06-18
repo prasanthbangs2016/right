@@ -1,0 +1,79 @@
+.main {
+  transition: all 0.5s;
+  background-color: white;
+}
+.boldblue {
+  font-weight: bold;
+  color: skyblue;
+  text-decoration: underline;
+}
+.addNew {
+  border: none;
+  color: white;
+  width: 100px;
+  border-radius: 5px;
+  float: right;
+  background-color: green;
+  align-self: flex-end;
+  margin-bottom: 10px;
+}
+.fullscreen .modal-dialog {
+  max-width: 100% !important;
+  max-height: 100% !important;
+  width: 100vw;
+  height: 100vh;
+  position: fixed !important;
+  margin: 0px !important;
+  overflow: hidden;
+}
+.disabledBox {
+  background-color: lightgrey;
+}
+.ModalCell {
+  color: skyblue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.error {
+  color: red;
+}
+.main85 {
+  width: 85%;
+}
+
+.main100 {
+  width: 100%;
+}
+.sideMenu {
+  background-color: #272e40;
+  transition: all 0.5s;
+}
+.w15 {
+  width: 15%;
+}
+.w0 {
+  width: 0%;
+}
+.MainPage {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.routingpage {
+  margin: 15px;
+  width: auto;
+  height: 100vh;
+  overflow-y: scroll;
+}
+.table {
+  padding-right: 30px;
+  white-space: nowrap;
+}
+th {
+  background-color: #272e40;
+  font-weight: bolder;
+  color: white;
+}
+.pagination .page-item.active .page-link {
+  background-color: #272e40 !important;
+}

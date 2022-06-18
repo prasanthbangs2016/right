@@ -1,0 +1,91 @@
+.TemplateList,
+.Resetpassword {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  .filters {
+    display: flex;
+    margin-bottom: 5px;
+    justify-content: space-between;
+    align-items: flex-end;
+    .Filter {
+      max-width: 20%;
+      .label {
+        font-weight: bolder;
+      }
+      .filterBox {
+        flex: 1;
+        margin-right: 5px;
+      }
+      .selectBox {
+        border: 2px solid #80808085;
+        border-radius: 5px;
+        padding: 5px;
+        width: 100%;
+      }
+    }
+  }
+}
+.Uploadlabel {
+  border: 1px solid #80808052;
+  padding: 2px;
+  border-radius: 5px;
+  background-color: #80808052;
+  margin-top: 8px;
+}
+.Box {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.Box,
+.Resetpassword {
+  .Error {
+    color: red;
+    font-size: 15px;
+  }
+  .formBox {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+  }
+  .boxLabel {
+    font-size: 12px;
+    color: grey;
+    font-weight: bold;
+  }
+  .inputBox,
+  .selectBox {
+    border: 2px solid #80808085;
+    border-radius: 5px;
+  }
+  .selectBox {
+    padding: 3px;
+  }
+}
+.ActionButtons {
+  display: flex;
+  justify-content: space-around;
+}
+.toogleButton {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 5px;
+  align-items: flex-end;
+  .tb {
+    display: flex;
+  }
+}
+.ModalButton {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .button {
+    border: none;
+    color: white;
+    margin-left: 10px;
+    border-radius: 5px;
+    padding: 0px 20px;
+  }
+}
